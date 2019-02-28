@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Main Navigation-->
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+      <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Opinions</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+  </header>
+  <!--Main Navigation-->
+
+  <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+    <div class="text-white text-center py-5 px-4 my-5">
+      <div>
+        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Create your beautiful website with MDBootstrap</strong></h2>
+        <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+          optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
+        </p>
+        <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>
+      </div>
+    </div>
+  </div><div class="container">
+      <h2>Nested Media Objects</h2>
+      <p>Media objects can also be nested (a media object inside a media object):</p><br>
+      <div class="media">
+        <div class="media-left">
+          <img src="img_avatar1.png" class="media-object" style="width:45px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+          <!-- Nested media object -->
+          <div class="media">
+            <div class="media-left">
+              <img src="img_avatar2.png" class="media-object" style="width:45px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+              <!-- Nested media object -->
+              <div class="media">
+                <div class="media-left">
+                  <img src="img_avatar3.png" class="media-object" style="width:45px">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <!-- Material form login -->
+<mdb-card>
+
+    <mdb-card-header class="info-color white-text text-center py-4">
+      <h5>
+        <strong>Sign in</strong>
+      </h5>
+    </mdb-card-header>
+  
+  
+    <!--Card content-->
+    <mdb-card-body class="px-lg-5 pt-0">
+  
+      <!-- Form -->
+      <form class="text-center" style="color: #757575;">
+  
+        <!-- Email -->
+        <div class="md-form">
+          <input type="email" id="materialLoginFormEmail" class="form-control" mdbInputDirective>
+          <label for="materialLoginFormEmail">E-mail</label>
+        </div>
+  
+        <!-- Password -->
+        <div class="md-form">
+          <input type="password" id="materialLoginFormPassword" class="form-control" mdbInputDirective>
+          <label for="materialLoginFormPassword">Password</label>
+        </div>
+  
+        <div class="d-flex justify-content-around">
+          <div>
+            <!-- Remember me -->
+            <mdb-checkbox>Remember me</mdb-checkbox>
+          </div>
+          <div>
+            <!-- Forgot password -->
+            <a href="">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!-- Sign in button -->
+        <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
+          type="submit">Sign in</button>
+  
+        <!-- Register -->
+        <p>Not a member?
+          <a href="">Register</a>
+        </p>
+  
+        <!-- Social login -->
+        <p>or sign in with:</p>
+        <a type="button" class="btn-floating btn-fb btn-sm">
+          <mdb-icon fab icon="facebook"></mdb-icon>
+        </a>
+        <a type="button" class="btn-floating btn-tw btn-sm">
+          <mdb-icon fab icon="twitter"></mdb-icon>
+        </a>
+        <a type="button" class="btn-floating btn-li btn-sm">
+          <mdb-icon fab icon="linkedin"></mdb-icon>
+        </a>
+        <a type="button" class="btn-floating btn-git btn-sm">
+          <mdb-icon fab icon="heart"></mdb-icon>
+        </a>
+  
+      </form>
+      <!-- Form -->
+  
+    </mdb-card-body>
+  
+  </mdb-card>
+  <!-- Material form login -->
+
+  <!--Rotating card-->
+<div class="col-md-4">
+    <mdb-flipping-card #cards>
+      <!--Front Side-->
+      <div class="face front tp-box_side tp-box_front">
+  
+        <!-- Image-->
+        <div class="card-up">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2859%29.jpg" class="img-fluid">
+        </div>
+        <!--Avatar-->
+        <div class="avatar">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%289%29.jpg" class="rounded-circle img-responsive">
+        </div>
+        <!--Content-->
+        <div class="card-body">
+          <h4>Jonathan Doe</h4>
+          <p>Web developer</p>
+          <!--Triggering button-->
+          <a class="rotate-btn" data-card="card-1" (click)="cards.toggle()">
+            <i class="fas fa-redo"></i> Click here to rotate</a>
+        </div>
+      </div>
+      <!--/.Front Side-->
+  
+      <!--Back Side-->
+      <div class="back tp-box_side tp-box_back">
+  
+        <!--Content-->
+        <h4>About me</h4>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem
+          amet repellat,
+          dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium
+          quaerat?</p>
+        <hr>
+        <!--Social Icons-->
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a class="icons-sm fb-ic">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="icons-sm tw-ic">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="icons-sm gplus-ic">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="icons-sm li-ic">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+        <!--Triggering button-->
+        <a class="rotate-btn" data-card="card-1" (click)="cards.toggle()">
+          <i class="fas fa-undo"></i> Click here to rotate back</a>
+  
+      </div>
+      <!--/.Back Side-->
+    </mdb-flipping-card>
+  </div>
+  <!--/.Rotating card-->
+
+
+  <!-- Section: Testimonials v.2 -->
+<section class="text-center my-5">
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Testimonials v.2</h2>
+    <!--Carousel Wrapper-->
+    <mdb-carousel [isControls]="false" [animation]="'slide'" class="testimonial-carousel">
+      <!--First slide-->
+      <mdb-slide>
+        <div class="testimonial">
+          <!--Avatar-->
+          <div class="avatar mx-auto mb-4">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
+              alt="First sample avatar image">
+          </div>
+          <!--Content-->
+          <p>
+            <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+            id
+            officiis hic tenetur quae quaerat ad
+            velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet
+            molestias
+            voluptatum
+            inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam.
+          </p>
+          <h4 class="font-weight-bold">Anna Deynah</h4>
+          <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+          <!--Review-->
+          <i class="fas fa-star blue-text"> </i>
+          <i class="fas fa-star blue-text"> </i>
+          <i class="fas fa-star blue-text"> </i>
+          <i class="fas fa-star blue-text"> </i>
+          <i class="fas fa-star-half blue-text"> </i>
+        </div>
+      </mdb-slide>
+  
+     
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12 mx-auto mt-5">
+              <h2 class="text-center">Angular Bootstrap Collapse</h2>
+            </div>
+          </div>
+        
+          <!-- Basic Example -->
+          <div class="row">
+            <div class="col-md-12 mx-auto text-center mt-5">
+              <h4 class="text-center">Basic Example</h4>
+              <button mdbBtn color="primary" class="waves-light" type="button" (click)="test.toggle()" mdbWavesEffect>
+                Toggle collapse
+              </button>
+        
+              <div class="" mdbCollapse #test="bs-collapse">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Basic Example -->
+        
+          <hr class="my-5">
+        
+          <!-- Collapse visible after view init -->
+          <div class="row">
+            <div class="col-md-12 mx-auto text-center mt-5">
+              <h4 class="text-center">Collapse visible after view init</h4>
+              <button class="btn btn-primary waves-light" type="button" (click)="testt.toggle()" mdbWavesEffect>
+                Toggle collapse
+              </button>
+        
+              <div class="" mdbCollapse #testt="bs-collapse">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
+                  craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Collapse visible after view init -->
+        
+          <hr class="my-5">
+        
+          <!-- Collapse events -->
+          <div class="row mb-5">
+            <div class="col-md-12 mx-auto text-center mt-5">
+              <h4 class="text-center">Collapse events</h4>
+              <button class="btn btn-primary waves-light" type="button" (click)="coll.toggle()" mdbWavesEffect>
+                Toggle collapse
+              </button>
+        
+              <div class="" mdbCollapse #coll="bs-collapse" (showBsCollapse)="showBsCollapse($event)" (shownBsCollapse)="shownBsCollapse($event)" (hideBsCollapse)="hideBsCollapse($event)" (hiddenBsCollapse)="hiddenBsCollapse($event)">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Collapse events -->
+        </div>
+        <main class="container-fluid">
+            <div class="row" *ngIf="!isChildRouteLoaded">
+              <div class="col-md-8 mx-auto my-5">
+                <mdb-card>
+                  <mdb-card-body>
+                    <mdb-card-title>
+                      <h4>MDB Angular - Advanced category</h4>
+                    </mdb-card-title>
+                    <mdb-card-text class="py-3">Alerts, Accordions, charts and many more! Get to know all our ready to use advanced components in one place.</mdb-card-text>
+                    <mdb-card-body>
+                      <!--Section: -->
+                      <section id="advanced-table-options">
+                        <!-- List group -->
+                        <div class="list-group">
+          
+                          <!-- Item -->
+                          <a *ngFor="let item of itemsArray" routerLink="{{item.link}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div>
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="h5 mb-3">{{item.name}}</h5>
+                              </div>
+                              <p class="mb-1">{{item.description}}</p>
+                            </div>
+          
+                            <i class="fa fa-chevron-right" style="font-size: 1.3rem;"></i>
+                          </a>
+                          <!-- Item -->
+                        </div>
+                      </section>
+                      <!--/Section: -->
+                    </mdb-card-body>
+                    <div class="d-flex flex-row justify-content-center">
+                      <a class="card-link" href="https://mdbootstrap.com/angular" alt="official documentation">Official documentation</a>
+                      <a class="card-link" href="https://mdbootstrap.com/angular/angular-bootstrap-getting-started/" alt="getting started">Getting Started</a>
+                    </div>
+                  </mdb-card-body>
+                </mdb-card>
+              </div>
+            </div>
+            <router-outlet  *ngIf="isChildRouteLoaded"></router-outlet>
+          </main>
+          <div class="container">
+              <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo" [containerInside]="false">
+                  <mdb-navbar-brand>
+                      <a class="navbar-brand" href="#">Navbar</a>
+                  </mdb-navbar-brand>
+              </mdb-navbar>
+          </div>
+ 
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
